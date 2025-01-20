@@ -6,17 +6,25 @@
     <title>Oskar Brzeski Portfolio</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!--
-        <script src="./htmx.min.js"></script>
-    -->
-    <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.js"
-        integrity="sha384-oeUn82QNXPuVkGCkcrInrS1twIxKhkZiFfr2TdiuObZ3n3yIeMiqcRzkIcguaof1"
-        crossorigin="anonymous"></script>
+    <script src="/scripts/htmx.min.js"></script>
 </head>
 
 <body>
+    {{ template "navbar" . }}
+
     <h1>Portfolio</h1>
+
+    {{ template "test" . }}
 </body>
 
 </html>
+{{ end }}
+
+{{ block "test" . }}
+<h2 id="h2test">Test</h2>
+<button hx-target="#h2test" hx-get="/test">Test</button>
+{{ end }}
+
+{{ block "success" . }}
+Success
 {{ end }}
