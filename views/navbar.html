@@ -1,7 +1,9 @@
 {{ block "navbar" . }}
 <nav>
-    <a hx-get="/education" hx-target="main">Education</a> |
-    <a hx-get="/experience" hx-target="main">Experience</a> |
-    <a hx-get="/projects" hx-target="main">Projects</a>
+    <a class="left" hx-get="/education" hx-target="main">Education</a>
+    <span>|</span>
+    <a class="centre" hx-get="/experience" hx-target="main">Experience</a>
+    <span>|</span>
+    <a class="right" hx-get="/projects" hx-target="main">Projects</a>
 </nav>
 {{ end }}

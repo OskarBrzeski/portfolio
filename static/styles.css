@@ -1,7 +1,29 @@
 /* nav */
 nav {
-    margin-left: auto;
-    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav a.left {
+    min-width: 6em;
+    text-align: right;
+}
+
+nav a.centre {
+    text-align: center;
+}
+
+nav a.right {
+    min-width: 6em;
+    text-align: left;
+}
+
+nav span {
+    min-width: 0.5em;
+    text-align: center;
+    margin-left: 0.2em;
+    margin-right: 0.2em;
 }
 
 /* education */
