@@ -1,0 +1,24 @@
+/* nav */
+nav {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* education */
+article.education {
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 1em;
+    padding: 1em;
+    margin-bottom: 0.5em;
+}
+
+article.education h2 {
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
+}
+
+article.education p {
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
+}

@@ -12,7 +12,7 @@ func main() {
 	e.Renderer = utils.NewTemplates()
 	e.Use(middleware.Logger())
 
-	e.Static("/scripts", "scripts")
+	e.Static("/static", "static")
 
 	e.GET("/", func(c echo.Context) error {
 		return c.Render(200, "index", nil)
@@ -20,6 +20,10 @@ func main() {
 
 	e.GET("/test", func(c echo.Context) error {
 		return c.Render(200, "success", nil)
+	})
+
+	e.GET("/education", func(c echo.Context) error {
+		return c.Render(200, "education", nil)
 	})
 
 	e.Logger.Fatal(e.Start(":8080"))

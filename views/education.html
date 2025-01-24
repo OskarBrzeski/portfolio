@@ -1,0 +1,34 @@
+{{ block "education" .}}
+<section>
+    <h1>Education</h1>
+
+    {{ template "university" . }}
+    {{ template "alevels" . }}
+    {{ template "gcse" . }}
+</section>
+{{ end }}
+
+{{ block "university" . }}
+<article class="education">
+    <header>
+        <h2>Durham University</h2>
+        <p>(October 2020 - June 2023)</p>
+    </header>
+    <p>BSc Computer Science - Ordinary Degree</p>
+</article>
+{{ end }}
+
+{{ block "alevels" . }}
+<article class="education">
+    <header>
+        <h2>Trinity Sixth Form</h2>
+        <p>(September 2018 - May 2020)</p>
+    </header>
+    <p>Mathematics - A*</p>
+    <p>Computer Science - A*</p>
+    <p>Physics - A</p>
+</article>
+{{ end }}
+
+{{ block "gcse" . }}
+{{ end }}
