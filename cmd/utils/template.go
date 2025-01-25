@@ -17,6 +17,6 @@ func (t *Templates) Render(w io.Writer, name string, data interface{}, c echo.Co
 
 func NewTemplates() *Templates {
 	return &Templates{
-		templates: template.Must(template.ParseGlob("views/*.html")),
+		templates: template.Must(template.ParseGlob("views/**/*.html")),
 	}
 }

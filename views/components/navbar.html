@@ -1,0 +1,9 @@
+{{ block "navbar" . }}
+<nav>
+    <a class="left" hx-get="/education" hx-target="body">Education</a>
+    <span>|</span>
+    <a class="centre" hx-get="/experience" hx-target="body">Experience</a>
+    <span>|</span>
+    <a class="right" hx-get="/projects" hx-target="body">Projects</a>
+</nav>
+{{ end }}

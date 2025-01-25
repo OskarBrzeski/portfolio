@@ -1,0 +1,57 @@
+{{ block "experience" .}}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Oskar Brzeski Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/static/styles.css">
+    <script src="/static/htmx.min.js"></script>
+</head>
+
+<body>
+    {{ template "navbar" . }}
+    <main>
+        <section>
+            <h1>Experience</h1>
+
+            {{ template "techreturn" . }}
+            <hr>
+            {{ template "northcoders" . }}
+        </section>
+    </main>
+</body>
+
+</html>
+{{ end }}
+
+{{ block "techreturn" . }}
+<article>
+    <header>
+        <h2>Freelance Project Consultant, Tech Returners</h2>
+        <span>September 2024 - October 2024</span>
+    </header>
+    <p>
+        Working as a freelance consultant to deliver a bespoke product
+        for internal development, as part of the Launchpad Project.
+    </p>
+</article>
+{{ end }}
+
+{{ block "northcoders" . }}
+<article>
+    <header>
+        <h2>Trainee Software Developer, Northcoders</h2>
+        <span>January 2024 - April 2024</span>
+    </header>
+    <p>
+        13-week digital skills bootcamp which teaches a new skill or
+        technology everyday and provides several hours of practice for
+        each topic. The software engineering course teaches front-end
+        and back-end development with the JavaScript ecosystem, namely
+        React and Express.js. Additionally, pair programming and test
+        driven development are used throughout most of the course.
+    </p>
+</article>
+{{ end }}

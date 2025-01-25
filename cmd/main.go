@@ -26,5 +26,9 @@ func main() {
 		return c.Render(200, "education", nil)
 	})
 
+	e.GET("/experience", func(c echo.Context) error {
+		return c.Render(200, "experience", nil)
+	})
+
 	e.Logger.Fatal(e.Start(":8080"))
 }
