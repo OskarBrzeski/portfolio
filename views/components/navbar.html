@@ -1,9 +1,30 @@
 {{ block "navbar" . }}
 <nav>
-    <a class="left" hx-get="/education" hx-target="body">Education</a>
+    <a
+        class="left"
+        hx-get="/education"
+        hx-target="body"
+        hx-push-url="true"
+    >
+       Education
+    </a>
     <span>|</span>
-    <a class="centre" hx-get="/experience" hx-target="body">Experience</a>
+    <a
+        class="centre"
+        hx-get="/experience"
+        hx-target="body"
+        hx-push-url="true"
+    >
+        Experience
+    </a>
     <span>|</span>
-    <a class="right" hx-get="/projects" hx-target="body">Projects</a>
+    <a
+        class="right"
+        hx-get="/projects"
+        hx-target="body"
+        hx-push-url="true"
+    >
+        Projects
+    </a>
 </nav>
 {{ end }}
