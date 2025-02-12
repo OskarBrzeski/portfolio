@@ -1,0 +1,63 @@
+{{ block "projects" .}}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Oskar Brzeski Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/static/styles.css">
+    <script src="/static/htmx.min.js"></script>
+</head>
+
+<body>
+    {{ template "navbar" . }}
+    <main>
+        <section>
+            <h1>Projects</h1>
+
+            {{ template "coffeecon" . }}
+            <hr>
+            {{ template "ncnews" . }}
+            <hr>
+            {{ template "ncnewsapi" . }}
+        </section>
+    </main>
+</body>
+
+</html>
+{{ end }}
+
+{{ block "coffeecon" . }}
+<article>
+    <header>
+        <h2>Coffee Connoiseur</h2>
+    </header>
+    <p>
+        Mobile Application which displays information on local coffee shops.
+        Written in React Native.
+    </p>
+</article>
+{{ end }}
+
+{{ block "ncnews" . }}
+<article>
+    <header>
+        <h2>NCNews</h2>
+    </header>
+    <p>
+        News website written in React.
+    </p>
+</article>
+{{ end }}
+
+{{ block "ncnewsapi" . }}
+<article>
+    <header>
+        <h2>NCNews API</h2>
+    </header>
+    <p>
+        API for NCNews written in JavaScript using Express.js and Postgres.
+    </p>
+</article>
+{{ end }}

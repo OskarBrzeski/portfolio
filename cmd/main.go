@@ -30,5 +30,9 @@ func main() {
 		return c.Render(200, "experience", nil)
 	})
 
+	e.GET("/projects", func(c echo.Context) error {
+		return c.Render(200, "projects", nil)
+	})
+
 	e.Logger.Fatal(e.Start(":8080"))
 }
